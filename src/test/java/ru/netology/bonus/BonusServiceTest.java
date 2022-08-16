@@ -16,7 +16,7 @@ public class BonusServiceTest {
     //  })
     @CsvFileSource(files = "src/test/resources/data.csv")
 
-    public void shouldCalculateForRegisteredAndUnderLimit(long expected, long amount, boolean registered) {
+    public void shouldCalculateBonus(long expected, long amount, boolean registered) {
 
         BonusService service = new BonusService();
 
